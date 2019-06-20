@@ -1,0 +1,70 @@
+{
+  "name": "sget",
+  "version": "1.0.0",
+  "description": "一种安全获取 Javascript Object 内部多层嵌套的某一属性的方法",
+  "main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "cs": "prettier --check --write ./**/*.js",
+    "prepare": "npm run build",
+    "precommit": "lint-staged",
+    "commit": "./node_modules/.bin/git-cz",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "version": "npm run changelog",
+    "changelog": "./node_modules/.bin/conventional-changelog -p angular -i CHANGELOG.md -s -r 0 && git add CHANGELOG.md",
+    "test": "jest",
+    "test-ci": "npm run clean && npm test"
+  },
+  "module": "index.js",
+  "browser": "dist/index.umd.js",
+  "sideEffects": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teeeemoji/safe-get.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.0.0",
+    "@commitlint/config-conventional": "^8.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "commitizen": "^3.1.1",
+    "conventional-changelog-cli": "^2.0.21",
+    "husky": "^2.4.1",
+    "jest": "^24.8.0",
+    "lint-staged": "^8.2.1",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "rollup": "^1.15.6"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --check --write",
+      "git add "
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "testMatch": [
+      "**/__test{s,}__/*.(spec|test).js"
+    ]
+  },
+  "keywords": [
+    "teeeemoji",
+    "safe-get",
+    "sget"
+  ],
+  "author": "teeeemoji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teeeemoji/safe-get/issues"
+  },
+  "homepage": "https://github.com/teeeemoji/safe-get#readme"
+}

@@ -1,5 +1,5 @@
 {
-  "name": "sget",
+  "name": "safeget",
   "version": "1.0.0",
   "description": "一种安全获取 Javascript Object 内部多层嵌套的某一属性的方法",
   "main": "index.js",
@@ -59,7 +59,7 @@
   "keywords": [
     "teeeemoji",
     "safe-get",
-    "sget"
+    "safeget"
   ],
   "author": "teeeemoji",
   "license": "MIT",

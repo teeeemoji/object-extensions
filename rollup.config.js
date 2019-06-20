@@ -3,7 +3,7 @@ import pkg from './package.json'
 export default {
   input: './index.js',
   output: {
-    name: 'sget',
+    name: 'safeget',
     file: pkg.browser,
     format: 'umd'
   }

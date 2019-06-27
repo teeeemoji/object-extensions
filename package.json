@@ -1,6 +1,6 @@
 {
   "name": "cyou-safe-get",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一种安全获取 Javascript Object 内部多层嵌套的某一属性的方法",
   "main": "index.js",
   "scripts": {

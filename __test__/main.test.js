@@ -5,7 +5,7 @@
  * Description
  *  This is the main test file
  *
- * @file   This main test file for class object-extensions.
+ * @file   This main test file for class object-property-extensions.
  * @author teeeemoji.
  * @since 2019-10-21
  */

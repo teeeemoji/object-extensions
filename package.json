@@ -1,6 +1,6 @@
 {
-  "name": "object-extensions",
-  "version": "0.0.1",
+  "name": "object-property-extensions",
+  "version": "1.0.0",
   "description": "Some utility methods for extending objects",
   "main": "dist/umd/index.umd.js",
   "module": "index.js",
@@ -24,15 +24,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/teeeemoji/object-extensions.git"
+    "url": "git+https://github.com/teeeemoji/object-property-extensions.git"
   },
   "keywords": [],
   "author": "teeeemoji <teeeemoji@163.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/teeeemoji/object-extensions/issues"
+    "url": "https://github.com/teeeemoji/object-property-extensions/issues"
   },
-  "homepage": "https://github.com/teeeemoji/object-extensions#readme",
+  "homepage": "https://github.com/teeeemoji/object-property-extensions#readme",
   "peerDependencies": {
     "decimal.js-light": "^2.5.0"
   },

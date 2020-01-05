@@ -1,23 +1,23 @@
-# object-extensions
+# object-property-extensions
 
-![Travis (.com)](https://img.shields.io/travis/com/teeeemoji/object-extensions)
-![Codecov](https://img.shields.io/codecov/c/github/teeeemoji/object-extensions?token=8b1462035af64c20adae6bb75dd2cda6)
-![NPM](https://img.shields.io/npm/l/object-extensions)
-![npm](https://img.shields.io/npm/v/object-extensions)
-![npm](https://img.shields.io/npm/dy/object-extensions)
-![npm bundle size](https://img.shields.io/bundlephobia/min/object-extensions?style=plastic)
-![GitHub last commit](https://img.shields.io/github/last-commit/teeeemoji/object-extensions)
+![Travis (.com)](https://img.shields.io/travis/com/teeeemoji/object-property-extensions)
+![Codecov](https://img.shields.io/codecov/c/github/teeeemoji/object-property-extensions?token=8b1462035af64c20adae6bb75dd2cda6)
+![NPM](https://img.shields.io/npm/l/object-property-extensions)
+![npm](https://img.shields.io/npm/v/object-property-extensions)
+![npm](https://img.shields.io/npm/dy/object-property-extensions)
+![npm bundle size](https://img.shields.io/bundlephobia/min/object-property-extensions?style=plastic)
+![GitHub last commit](https://img.shields.io/github/last-commit/teeeemoji/object-property-extensions)
 
 ## Installation
 
 ```console
-$ npm install object-extensions --save
+$ npm install object-property-extensions --save
 ```
 
 ## Usage
 
 ```javascript
-import {safeGet, safeSet, hasOwnProperty} from 'object-extensions'
+import {safeGet, safeSet, hasOwnProperty} from 'object-property-extensions'
 const obj = {
   a: 1,
   b: [{
@@ -39,7 +39,7 @@ safeSet(obj, 'a.1.2', 1) // true
 
 ### hasOwnProperty
 
-[src/index.js:16-28](https://github.com/teeeemoji/object-extensions/blob/ac780c9725e91afd8266d82a42dcc279a9861437/src/index.js#L16-L28 "Source code on GitHub")
+[src/index.js:16-28](https://github.com/teeeemoji/object-property-extensions/blob/ac780c9725e91afd8266d82a42dcc279a9861437/src/index.js#L16-L28 "Source code on GitHub")
 
 Determines whether the ctx contains deeply nested property of the path description
 
@@ -52,7 +52,7 @@ Returns **[boolean](https://developer.mozilla.org/docs/Web/JavaScript/Reference/
 
 ### safeGet
 
-[src/index.js:38-44](https://github.com/teeeemoji/object-extensions/blob/ac780c9725e91afd8266d82a42dcc279a9861437/src/index.js#L38-L44 "Source code on GitHub")
+[src/index.js:38-44](https://github.com/teeeemoji/object-property-extensions/blob/ac780c9725e91afd8266d82a42dcc279a9861437/src/index.js#L38-L44 "Source code on GitHub")
 
 Safely retrieve the deep nested property of ctx that describe in the path
 
@@ -65,7 +65,7 @@ Returns **any**
 
 ### safeSet
 
-[src/index.js:55-67](https://github.com/teeeemoji/object-extensions/blob/ac780c9725e91afd8266d82a42dcc279a9861437/src/index.js#L55-L67 "Source code on GitHub")
+[src/index.js:55-67](https://github.com/teeeemoji/object-property-extensions/blob/ac780c9725e91afd8266d82a42dcc279a9861437/src/index.js#L55-L67 "Source code on GitHub")
 
 Safely set deeply nested property of ctx that describe in path
 

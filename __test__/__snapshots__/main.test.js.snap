@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hasOwnProperty hasOwnProperty one.two.three 1`] = `true`;
+
+exports[`hasOwnProperty not hasOwnProperty one.two.three.four 1`] = `false`;
+
+exports[`safeGet safeGet arr.0.value 1`] = `2`;
+
+exports[`safeGet safeGet arr.1.value 1`] = `undefined`;
+
+exports[`safeGet safeGet one.two.three 1`] = `4`;
+
+exports[`safeSet safeSet arr.0.value 1`] = `true`;
+
+exports[`safeSet safeSet arr.1.value 1`] = `false`;
+
+exports[`safeSet safeSet one.two.three 1`] = `true`;

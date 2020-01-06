@@ -32,10 +32,10 @@ describe('hasOwnProperty', () => {
   })
 
   test('hasOwnProperty one.two.three', () => {
-    expect(hasOwnProperty(testObj, 'one.two.three')).toBeTruthy()
+    expect(hasOwnProperty(testObj, 'one.two.three')).toMatchSnapshot()
   })
   test('not hasOwnProperty one.two.three.four', () => {
-    expect(hasOwnProperty(testObj, 'arr.1.value')).not.toBeTruthy()
+    expect(hasOwnProperty(testObj, 'arr.1.value')).toMatchSnapshot()
   })
 })
 describe('safeGet', () => {
@@ -45,13 +45,13 @@ describe('safeGet', () => {
   })
 
   test('safeGet one.two.three', () => {
-    expect(safeGet(testObj, 'one.two.three')).toBe(TEST_OBJ.one.two.three)
+    expect(safeGet(testObj, 'one.two.three')).toMatchSnapshot()
   })
   test('safeGet arr.0.value', () => {
-    expect(safeGet(testObj, 'arr.0.value')).toBe(TEST_OBJ.arr[0].value)
+    expect(safeGet(testObj, 'arr.0.value')).toMatchSnapshot()
   })
   test('safeGet arr.1.value', () => {
-    expect(safeGet(testObj, 'arr.1.three.four')).toBeUndefined()
+    expect(safeGet(testObj, 'arr.1.three.four')).toMatchSnapshot()
   })
 })
 describe('safeSet', () => {
@@ -62,14 +62,14 @@ describe('safeSet', () => {
   })
 
   test('safeSet one.two.three', () => {
-    expect(safeSet(testObj, 'one.two.three', newVal)).toBeTruthy()
+    expect(safeSet(testObj, 'one.two.three', newVal)).toMatchSnapshot()
     expect(testObj.one.two.three).toBe(newVal)
   })
   test('safeSet arr.0.value', () => {
-    expect(safeSet(testObj, 'arr.0.value', newVal)).toBeTruthy()
+    expect(safeSet(testObj, 'arr.0.value', newVal)).toMatchSnapshot()
     expect(testObj.arr[0].value).toBe(newVal)
   })
   test('safeSet arr.1.value', () => {
-    expect(safeSet(testObj, 'arr.1.value')).toBeFalsy()
+    expect(safeSet(testObj, 'arr.1.value')).toMatchSnapshot()
   })
 })

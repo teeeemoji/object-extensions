@@ -16,5 +16,17 @@ module.exports = [
       commonjs(),
       terser()
     ]
+  },
+  {
+    input: './index.js',
+    output: {// esm
+      file: 'dist/esm/index.esm.js',
+      format: 'esm'
+    },
+    plugins: [
+      terser()
+    ],
+    // 指出应将哪些模块视为外部模块
+    external: []
   }
 ]

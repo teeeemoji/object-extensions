@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Some utility methods for extending objects",
   "main": "dist/umd/index.umd.js",
-  "module": "index.js",
+  "module": "dist/esm/index.esm.js",
   "browser": "dist/umd/index.umd.js",
   "scripts": {
     "build": "rollup -c",
